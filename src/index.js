@@ -42,7 +42,7 @@ const defaultTheme = createTheme({
     },
     //very light blue
     background: {
-      default: '#6fa8dc',
+      default: '#ffff',
     },
     text: {
       primary: '#0319bd',
