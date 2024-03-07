@@ -34,7 +34,7 @@ const Header = ({ auth, logout }) => {
                     color="inherit"
                     aria-label={"Home"}
                     onClick={() => navigate("/")}
-                    sx={{ marginRight: 10, marginBottom: -8, marginLeft: -35, color: '#0319bd' }}
+                    sx={{ marginRight: 10, marginBottom: -8, marginLeft: -22, color: '#0319bd' }}
                 >
                     <Typography variant="h4">HOME</Typography>
                 </IconButton>
