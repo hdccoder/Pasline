@@ -5,10 +5,11 @@ import Products from './Components/Products';
 import Orders from './Components/Orders';
 import Cart from './Components/Cart';
 import Login from './Components/Login';
-import NavBar from './Components/Header';
+import Header from './Components/Header';
 import api from './api';
+import Box from '@mui/material/Box';
 
-const Home = ({ auth , setAuth }) => {
+const Home = ({ auth , setAuth, logout }) => {
 
     const [products, setProducts] = useState([]);
     const [orders, setOrders] = useState([]);
@@ -74,22 +75,29 @@ const Home = ({ auth , setAuth }) => {
       }, 0);
 
       return (
-        <div>
+        <Box>
+<Box sx={{ display: 'flex', minHeight: "100vh" }}>
+        
+        <Header auth={auth} logout={logout}/>
+        <Box
+              component="main"
+              sx={{
+           
+                flexGrow: 1,
+                // height: '100vh',
+                overflow: 'auto',
+                paddingTop: '10rem'
+              }}
+            >
+    
+
           {
             auth.id ? (
               <>
-                <nav>
-                  <Link to='/products'>Products ({ products.length })</Link>
-                  <Link to='/orders'>Orders ({ orders.filter(order => !order.is_cart).length })</Link>
-                  <Link to='/cart'>Cart ({ cartCount })</Link>
-                  <span>
-                    Welcome { auth.username }!
-                    <button onClick={ logout }>Logout</button>
-                  </span>
-                </nav>
+            
                 <main>
                   <Routes>
-                  
+{/*                   
                     <Route path='/products' element={
                       <Products
                         auth = { auth }
@@ -99,7 +107,7 @@ const Home = ({ auth , setAuth }) => {
                         updateLineItem = { updateLineItem }
                         updateProduct = {updateProduct}
                       />
-                    }/>
+                    }/> */}
                     <Route path='/cart' element={
                       <Cart
                         cart = { cart }
@@ -121,10 +129,10 @@ const Home = ({ auth , setAuth }) => {
                 </main>
                 </>
             ):(
-              <div>
+              <Box>
                 {/* <Login login={ login }/> */}
                 <Routes>
-                  <Route path='/products' element={
+                  {/* <Route path='/products' element={
                     <Products
                       products={ products }
                       cartItems = { cartItems }
@@ -132,8 +140,8 @@ const Home = ({ auth , setAuth }) => {
                       updateLineItem = { updateLineItem }
                       auth = { auth }
                     />
-                  }/>
-                  <Route path='/' element={
+                  }/> */}
+                  {/* <Route path='/' element={
                     <Products
                     products={ products }
                     cartItems = { cartItems }
@@ -141,12 +149,14 @@ const Home = ({ auth , setAuth }) => {
                     updateLineItem = { updateLineItem }
                     auth = { auth }
                   />
-                  }/>
+                  }/> */}
                 </Routes>
-              </div>
+              </Box>
             )
           }
-        </div>
+          </Box>
+        </Box>
+      </Box>
       );
 }
 export default Home; 
