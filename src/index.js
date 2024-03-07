@@ -45,8 +45,8 @@ const defaultTheme = createTheme({
       default: '#ffff',
     },
     text: {
-      primary: '#0319bd',
-      secondary: '#0319bd',
+      primary: '#011290',
+      secondary: '#011290',
     },
   },
   typography: {

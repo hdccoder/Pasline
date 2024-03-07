@@ -50,7 +50,7 @@ const Banner = () => {
       <Box sx={{ display: 'flex', flexDirection: 'column', position: 'absolute', top: ' 318px', right: '-458px' }}>
         <SlideInText color='#ffff' text="Compassionate care in the comfort of your home." delay={0} />
         <SlideInText color='#ffff' text="Highest quality care with utmost respect for privacy and dignity." delay={500} />
-        <SlideInText color='#ffff' text="Exceptional care for that helps individuals achieve their goals." delay={1000} />
+        <SlideInText color='#ffff' text="Exceptional care that helps individuals achieve their goals." delay={1000} />
       </Box>
       <Button
         onClick={handleButtonClick}
