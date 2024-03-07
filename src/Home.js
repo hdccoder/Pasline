@@ -9,6 +9,7 @@ import Header from './Components/Header';
 import api from './api';
 import Box from '@mui/material/Box';
 import Banner from './Components/Banner';
+import Mission from './Components/Mission'
 import { Container } from '@mui/material';
 
 
@@ -92,15 +93,15 @@ const Home = ({ auth , setAuth, logout }) => {
                 paddingTop: '10rem'
               }}
             >
-    <Container sx={{ display: 'flex', minHeight: "100vh" }} >   
+    <Container sx={{  minHeight: "100vh" }} >   
       <Routes>
       <Route path="/" element={
-                    <>
-                 <Banner/>
-                    </>
-                  }>
-                     
-                  </Route>
+    <>
+      <Banner />
+      <Mission />
+    </>
+  }>
+  </Route>
   
   
       </Routes>
