@@ -22,10 +22,11 @@ const Header = ({ auth, logout }) => {
             width: "60rem",
             paddingTop: "50px",
             marginLeft: "-240px", 
-            marginTop: "-40px"
+            marginTop: "-40px",
             }}
             alt="pic of a record"
             src="/public/assets/PLOGO5.png"
+
          />
         </Button>
         <Tooltip title={"Home"}>
