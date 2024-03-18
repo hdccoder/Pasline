@@ -12,6 +12,7 @@ import Banner from './Components/Banner';
 import Mission from './Components/Mission'
 import { Container } from '@mui/material';
 import Media from './Components/Media';
+import About from './Components/About';
 
 
 const Home = ({ auth , setAuth, logout }) => {
@@ -104,7 +105,7 @@ const Home = ({ auth , setAuth, logout }) => {
     </>
   }>
   </Route>
-  
+  <Route path="/faq" element={<About/>}/>
   
       </Routes>
 

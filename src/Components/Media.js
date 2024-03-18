@@ -18,7 +18,7 @@ const Video = styled('video')({
 
 const Media = () => {
   return (
-    <Paper elevation={3}>
+    <Paper elevation={3} >
       <VideoContainer>
         <Video controls>
           <source src="public/media/AdobeStock_666891958_Video_HD_Preview.mov" type="video/quicktime" />

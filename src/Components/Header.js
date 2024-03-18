@@ -62,7 +62,7 @@ const Header = () => {
           onClick={() => navigate('/')}
           color="inherit"
           variant="text"
-          sx={{ color: '#0319bd', marginLeft: '-9.2rem', marginBottom: '-80', }}
+          sx={{ color: '#0319bd', marginLeft: '-10.7rem', marginBottom: '-80', }}
         >
           <Typography variant="h4">HOME</Typography>
         </Button>
