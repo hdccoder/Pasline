@@ -11,6 +11,7 @@ import Box from '@mui/material/Box';
 import Banner from './Components/Banner';
 import Mission from './Components/Mission'
 import { Container } from '@mui/material';
+import Media from './Components/Media';
 
 
 const Home = ({ auth , setAuth, logout }) => {
@@ -99,6 +100,7 @@ const Home = ({ auth , setAuth, logout }) => {
     <>
       <Banner />
       <Mission />
+      <Media/>
     </>
   }>
   </Route>

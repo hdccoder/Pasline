@@ -11,7 +11,7 @@ const Header = ({ auth, logout }) => {
     // const token = window.localStorage.getItem('token')
 
     return (
-        <AppBar position="fixed" sx={{ backgroundColor: 'white', height: "10rem" }}>
+        <AppBar position="absolute"  sx={{ backgroundColor: 'white', height: "10rem" }}>
          <Toolbar>
          <Button sx={{ display: 'flex', flexDirection: 'column' }}>  
             <Box
