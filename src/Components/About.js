@@ -43,7 +43,7 @@ const About =  () => {
             alt="Women Giving Exceptional Care"
             src="/public/assets/AboutPic.jpeg"
           />
-          <Box sx={{ display: 'flex', flexDirection: 'column', position: 'absolute', top: '40px', right: '-470px' }}>
+          {/* <Box sx={{ display: 'flex', flexDirection: 'column', position: 'absolute', top: '40px', right: '-470px' }}>
             <Typography variant="h4" color='#fff'>
               Welcome to
             </Typography>
@@ -79,7 +79,7 @@ const About =  () => {
             }}
           >
             <Typography variant="h6">904-000-0000</Typography>
-          </Button>
+          </Button> */}
         </Container>
       );
     };

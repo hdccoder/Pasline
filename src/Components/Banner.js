@@ -39,7 +39,7 @@ const Banner = () => {
         alt="Women Giving Exceptional Care"
         src="/public/assets/HPBanner.jpg"
       />
-      <Box sx={{ display: 'flex', flexDirection: 'column', position: 'absolute', top: '40px', right: '-470px' }}>
+      <Box sx={{ display: 'flex', flexDirection: 'column', position: 'absolute', top: '40px', right: '-440px' }}>
         <Typography variant="h4" color='#fff'>
           Welcome to
         </Typography>
@@ -47,7 +47,7 @@ const Banner = () => {
           Pasline Home Health Care Agency
         </Typography>
       </Box>
-      <Box sx={{ display: 'flex', flexDirection: 'column', position: 'absolute', top: ' 318px', right: '-458px' }}>
+      <Box sx={{ display: 'flex', flexDirection: 'column', position: 'absolute', top: ' 318px', right: '-420px' }}>
         <SlideInText color='#ffff' text="Compassionate care in the comfort of your home." delay={0} />
         <SlideInText color='#ffff' text="Highest quality care with utmost respect for privacy and dignity." delay={500} />
         <SlideInText color='#ffff' text="Exceptional care that helps individuals achieve their goals." delay={1000} />
@@ -57,9 +57,13 @@ const Banner = () => {
         sx={{
           position: 'absolute',
           top: '160px', // Adjust the distance from the top
-          right: '-300px', // Adjust the distance from the right
+          right: '-270px', // Adjust the distance from the right
           backgroundColor: '#fff',
           color: '#cd112a',
+          '&:hover': {
+            backgroundColor: '#0319bd',
+            color: '#fff',
+          },
         }}
       >
         <Typography variant="h6">About Us</Typography>
@@ -69,9 +73,13 @@ const Banner = () => {
         sx={{
           position: 'absolute',
           top: '235px', // Adjust the distance from the top
-          right: '-340px', // Adjust the distance from the right
+          right: '-303px', // Adjust the distance from the right
           backgroundColor: '#fff',
           color: '#cd112a',
+          '&:hover': {
+            backgroundColor: '#0319bd',
+            color: '#fff',
+          },
         }}
       >
         <Typography variant="h6">904-000-0000</Typography>
